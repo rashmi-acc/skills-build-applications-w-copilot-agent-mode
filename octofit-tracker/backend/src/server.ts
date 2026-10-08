@@ -11,7 +11,7 @@ const apiBaseUrl = codespaceName
   : 'http://localhost:8000';
 
 app.use(express.json());
-app.use('/api', apiRoutes);
+app.use(apiRoutes);
 
 app.get('/api/health', (_request, response) => {
   response.json({
